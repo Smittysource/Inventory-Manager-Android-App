@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginImageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/login"
+        app:tint="@color/primary"
+        android:layout_toLeftOf="@id/editTextEditUsername"
+        android:layout_alignTop="@id/editTextEditUsername"
+        android:layout_marginLeft="40dp" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/login_prompt"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        android:layout_below="@id/loginImageView"
+        android:layout_toLeftOf="@id/editTextEditUsername"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEditUsername"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_rectangle"
+        android:drawableStart="@drawable/account"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/faded_primary"
+        android:ems="12"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_rectangle"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/faded_primary"
+        android:ems="12"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextEditUsername"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_rectangle"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/faded_primary"
+        android:ems="12"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_rectangle"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/faded_primary"
+        android:ems="12"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_below="@id/editName"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/editTextEditUsername"
+        android:layout_alignTop="@id/editTextEditUsername"
+        android:text="@string/login_prompt" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/editTextEditUsername"
+        android:layout_alignTop="@id/editTextPassword"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/registerCancelButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/cancel"
+        android:layout_toRightOf="@id/editTextEditUsername"
+        android:layout_below="@id/registerAcceptButton"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/registerAcceptButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/accept"
+        android:layout_toRightOf="@id/editTextEditUsername"
+        android:layout_alignTop="@id/editTextEditUsername"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password" />
+</RelativeLayout>

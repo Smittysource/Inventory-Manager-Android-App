@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/headerViewEdit"
+        android:layout_width="43dp"
+        android:layout_height="match_parent"
+        android:text="@string/edit"
+        android:textColor="@color/primary"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/headerViewDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/item_description"
+        android:layout_weight="1"
+        android:textColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/headerViewIncrement"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:text="@string/increment"
+        android:textColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/headerViewQuantity"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:text="@string/count"
+        android:textColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/headerViewDecrement"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:text="@string/decrement"
+        android:textColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/headerViewDelete"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:text="@string/del"
+        android:textColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:textSize="16sp" />
+
+</LinearLayout>
