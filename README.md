@@ -1,4 +1,4 @@
-# CS-360
+# Inventory Manager Android App
 
 This project is an inventory management app for Android devices. The app was designed to be easy to use, intuitive, and provide the necessary functionality to maintain on hand counts for a warehouse, business, marketplace, or even personal use. The app is designed to require a login with the ability to register an account. The app maintains login status for ten minutes, and then automatically logs the user out.
 
